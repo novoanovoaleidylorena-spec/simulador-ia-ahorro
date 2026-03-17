@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>FUTURO DEL DINERO CON LA IA</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>FUTURO DEL DINERO CON LA IA</h1>
+
+</header>
+
+<div class="container">
+
+<div class="panel">
+
+<label>Ingresos mensuales (COP)</label>
+<input type="number" id="ingresos">
+
+<label>Gastos mensuales (COP)</label>
+<input type="number" id="gastos">
+
+<label>Meta de ahorro</label>
+<select id="meta" onchange="cambiarImagen()">
+
+<option value="viaje">Viaje</option>
+<option value="casa">Comprar casa</option>
+<option value="carro">Comprar carro</option>
+<option value="moto">Comprar moto</option>
+<option value="universidad">Estudios</option>
+<option value="negocio">Crear negocio</option>
+<option value="computador">Computador</option>
+<option value="celular">Celular</option>
+<option value="inversion">Inversión</option>
+<option value="vacaciones">Vacaciones</option>
+<option value="mudanza">Mudanza</option>
+<option value="boda">Boda</option>
+<option value="gaming">Setup gamer</option>
+<option value="cursoIA">Curso IA</option>
+<option value="ahorro">Fondo de ahorro</option>
+
+</select>
+
+<label>Cuánto cuesta tu meta (COP)</label>
+<input type="number" id="costo">
+
+<button onclick="calcular()">Calcular Plan</button>
+
+</div>
+
+<div class="panel resultado">
+
+<img id="imagenMeta" src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png">
+
+<h2 id="resultado"></h2>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
